@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block main %}
+<h1>{{ article.title }}</h1>
+<div class="date">{{ article.created|formatDate }}</div>
+<div class="content">
+  {{ content_html }}
+</div>
+{% endblock %}

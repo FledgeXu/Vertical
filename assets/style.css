@@ -1,0 +1,119 @@
+:root {
+    --background-color: #fff;
+    --foreground-color: #000;
+    --link-color: #336bad;
+    --foreground-secondary-color: #666;
+    --border-color: #e2e2e2;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #1c1c1e;
+        --foreground-color: #fff;
+        --link-color: #6699ff;
+        --foreground-secondary-color: #adadaf;
+        --border-color: #2b2b2d;
+    }
+}
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--background-color);
+    padding: 0;
+    margin: 0;
+    font-family: helvetica neue,arial,hiragino sans gb,microsoft yahei,sans-serif;
+}
+
+a:link, a:visited, a:active {
+    color: var(--link-color);
+    text-decoration: none;
+    line-break: anywhere;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+code {
+    line-break: anywhere;
+}
+
+h1 {
+    color: var(--foreground-color);
+    font-size: 2em;
+    margin: 0 0 20px 0;
+    line-height: 1;
+}
+
+img {
+    max-width: 100%;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    color: var(--border-color);
+    background-color: var(--border-color);
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.date {
+    font-size: 0.8em;
+    color: var(--foreground-secondary-color);
+}
+
+.main {
+    max-width: 800px;
+    margin: 0 auto 0 auto;
+    padding: 20px;
+}
+
+.content {
+    margin: 20px 0 20px 0;
+    line-height: 160%;
+    font-size: 1em;
+    color: var(--foreground-color);
+}
+
+.site-title {
+    font-size: 3em;
+    line-height: 1;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.site-about {
+    font-size: 1.2em;
+    line-height: 160%;
+    margin-bottom: 20px;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+}
+
+.item-date {
+    min-width: 160px;
+    font-size: 0.75em;
+    color: var(--foreground-secondary-color);
+    text-align: right;
+    margin-right: 1em;
+}
+
+.item-title {
+    flex: 1;
+    font-size: 1em;
+    line-height: 1;
+}
