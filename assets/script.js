@@ -1,3 +1,7 @@
+function iter$__6(a) {
+  let v;
+  return a ? ((v = a.toIterable) ? v.call(a) : a) : [];
+}
 function adjustArticleHeight() {
   var res;
   function articleHeight() {

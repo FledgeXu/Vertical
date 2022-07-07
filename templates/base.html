@@ -6,8 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#fdfdfc" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#161618" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="{{ assets_prefix }}assets/tategaki.css?r={{ build_timestamp }}">
     <link rel="stylesheet" href="{{ assets_prefix }}assets/style.css?r={{ build_timestamp }}">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,428;0,686;1,428;1,686&amp;family=Noto+Serif+TC:wght@500;900&amp;display=swap" rel="stylesheet">
     <script src="{{ assets_prefix }}assets/script.js?r={{ build_timestamp }}" async></script>
+    <script src="{{ assets_prefix }}assets/tategaki.min.js?r={{ build_timestamp }}" async></script>
+    <script>
+            (function(d) {
+                var config = {
+                    kitId: 'quu8bfa',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+            })(document);
+    </script>
     <title>{% block title %}{{ page_title }}{% endblock %}</title>
     {% block head %}{% endblock %}
   </head>
