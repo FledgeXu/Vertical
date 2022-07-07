@@ -2,8 +2,11 @@
 {% block dom_ready %}
 {% endblock %}
 {% block main %}
-<div class="site-title">{{ page_title }}</div>
+<article>
+<div class="headline">
+<h1 class="site-title">{{ page_title }}</h1>
 <div class="site-about">{{ page_description }}</div>
+</div>
 <div class="items">
 {% for article in articles %}
 <div class="item">
@@ -12,4 +15,5 @@
 </div>
 {% endfor %}
 </div>
+</article>
 {% endblock %}

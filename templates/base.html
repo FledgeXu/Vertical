@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta content="True" name="HandheldFriendly">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#fff">
-    <meta name="theme-color" content="#1c1c1e" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#fdfdfc" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#161618" media="(prefers-color-scheme: dark)">
     <link rel="stylesheet" href="{{ assets_prefix }}assets/style.css?r={{ build_timestamp }}">
+    <script src="{{ assets_prefix }}assets/script.js?r={{ build_timestamp }}" async></script>
     <title>{% block title %}{{ page_title }}{% endblock %}</title>
     {% block head %}{% endblock %}
   </head>
