@@ -5,6 +5,13 @@
 <h1>{{ article.title }}</h1>
 <div class="date">{{ article.created|formatDate }}</div>
 </div>
+  {% if article.hasVideo %}
+  <div class="video-container">
+  <video class="video" controls playsinline>
+    <source src="{{ article.videoFilename }}" type="video/mp4">
+  </video>
+  </div>
+  {% endif %}
   {{ content_html }}
 </article>
 {% endblock %}
